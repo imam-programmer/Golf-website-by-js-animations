@@ -29,6 +29,23 @@ html,body{
     font-weight: 500;
     
 }
+#cursor{
+    height: 20px;
+    width: 20px;
+    background: #95C11e;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 999;
+}
+#cursor-blur{
+        height: 400px;
+    width: 400px;
+    background: #96c11e3d;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 9;
+    filter: blur(50px);
+}
 video{
     height: 100%;
     width: 100%;
@@ -49,6 +66,7 @@ background: #0000008a;
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    z-index: 10;
  
     
 }
@@ -79,4 +97,5 @@ background: #0000008a;
 #page2{
     height: 100vh;
     width: 100%;
+     z-index: 10;
 }
