@@ -69,6 +69,7 @@ background: #0000008a;
     flex-direction: column;
     text-align: center;
     z-index: 10;
+    margin-bottom: 50px;
  
     
 }
@@ -90,6 +91,28 @@ background: #0000008a;
 #page1 h2{
     font-size: 30px;
     text-transform: uppercase;
+}
+#page1 #arrow{
+    height: 200px;
+    width: 200px;
+    background: transparent;
+    border: 2px solid #95C11e;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    left: -2%;
+    bottom: -2%;
+    transition: 0.5s;
+}
+#page1 #arrow:hover{
+    scale:0.4;
+    background-color: #95C11e;
+}
+#page1 #arrow i{
+    font-size: 50px;
+    font-weight: 900;
 }
 #page1 p{
     font-size: 17px;
@@ -281,6 +304,7 @@ object-fit: cover;
     justify-content:center;
     gap: 100px;
     align-items: center;
+    position: relative;
 
 }
 .elem{
@@ -317,4 +341,21 @@ object-fit: cover;
 }
 .elem:hover img{
     scale:1
+}
+#page4 h1{
+    font-size: 70px;
+    position: absolute;
+    top: -30px;
+    color: #000;
+    -webkit-text-stroke:1px  white
+}
+#footer{
+    height: 40vh;
+    background: linear-gradient(to left bottom,#119f3a,#ace022);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 150px;
+    padding: 0 100px;
 }

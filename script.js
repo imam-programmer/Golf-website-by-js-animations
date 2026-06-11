@@ -94,3 +94,14 @@ gsap.from("#colon2",{
         scrub:1
     }
 })
+gsap.from("#page4 h1",{
+    y:50,
+    duration:2,
+    scrollTrigger:{
+        trigger:"#page4",
+        scroller:"body",
+        start:"top 75%",
+        end:"top 70%",
+        scrub:2
+    }
+})
