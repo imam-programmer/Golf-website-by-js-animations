@@ -227,3 +227,23 @@ object-fit: cover;
 .card:hover{
     transform: rotate3d(-1,1,0,20deg);
 }
+#green-div{
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to left bottom,#37aa32,#b0e913);
+}
+#green-div h4{
+    font-size: 25px;
+    width: 45%;
+    line-height: 35px;
+    text-align: center;
+    color: #000;
+    text-transform: uppercase;
+}
+#green-div img{
+    height: 100%;
+    object-fit: cover;
+    width: 10%;
+}
