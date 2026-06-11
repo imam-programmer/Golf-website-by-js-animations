@@ -37,6 +37,7 @@ html,body{
     border-radius: 50%;
     position: fixed;
     z-index: 999;
+    
 }
 #cursor-blur{
         height: 400px;
@@ -246,4 +247,31 @@ object-fit: cover;
     height: 100%;
     object-fit: cover;
     width: 10%;
+}
+#page3{
+    height: 100vh;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+#page3>p{
+    font-size: 30px;
+    font-weight: 700;
+    width: 50%;
+    text-align: center;
+    text-transform: uppercase;
+}
+#page3 img{
+    position: absolute;
+    height: 60px;
+}
+#page3 #colon1{
+    left: 20%;
+    top: 25%;
+}
+#page3 #colon2{
+    right: 20%;
+    bottom: 25%;
 }
