@@ -106,6 +106,7 @@ background: #0000008a;
     overflow-y: hidden;
     position: relative;
     z-index: 10;
+    margin-bottom: 100px;
 }
 #scroller h4{
     display: inline-block;
@@ -139,4 +140,31 @@ background: #0000008a;
         transform: translateX(-100%);
     }
     
+}
+#about-us{
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 50px;
+    position: relative;
+}
+#about-us img{
+height: 220px;
+width: 220px;
+border-radius: 20px;
+object-fit: cover;
+}
+#about-us-in{
+    width: 50%;
+    text-align: center;
+}
+#about-us-in h3{
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+#about-us-in p{
+    font-size: 20px;
+    line-height: 26px;
 }
