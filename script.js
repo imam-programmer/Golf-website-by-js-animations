@@ -33,12 +33,14 @@ gsap.to("#main",{
 
 let h4all=document.querySelectorAll("#nav h4");
 h4all.forEach((elem)=>{
-elem.addEventListener("mouseenter",()=>{
+elem.addEventListener("mouseenter",(e)=>{
+   
     crsr.style.scale=3;
     crsr.style.border="0.1px solid white";
     crsr.style.backgroundColor="transparent"
 })
-elem.addEventListener("mouseleave",(x)=>{
+elem.addEventListener("mouseleave",(e)=>{
+   
     crsr.style.scale=1;
     crsr.style.border="0px solid #95C11e";
     crsr.style.backgroundColor="#95C11e"
