@@ -1,10 +1,8 @@
 let crsr=document.querySelector("#cursor")
 let blur=document.querySelector("#cursor-blur")
 document.addEventListener("mousemove",(dets)=>{
-crsr.style.left=dets.x+"px";
-crsr.style.top=dets.y+"px"
-blur.style.left=dets.x-200+"px";
-blur.style.top=dets.y-200+"px"
+crsr.style.transform=`translate(${dets.clientX}px, ${dets.clientY}px) translate(-50%, -50%)`;
+
 })
 
 gsap.to("#nav",{
@@ -31,21 +29,6 @@ gsap.to("#main",{
     }
 })
 
-let h4all=document.querySelectorAll("#nav h4");
-h4all.forEach((elem)=>{
-elem.addEventListener("mouseenter",(e)=>{
-   
-    crsr.style.scale=3;
-    crsr.style.border="0.1px solid white";
-    crsr.style.backgroundColor="transparent"
-})
-elem.addEventListener("mouseleave",(e)=>{
-   
-    crsr.style.scale=1;
-    crsr.style.border="0px solid #95C11e";
-    crsr.style.backgroundColor="#95C11e"
-})
-})
 gsap.from("#about-us img,#about-us-in",{
     y:50,
     opacity:0,
@@ -80,7 +63,7 @@ gsap.from("#colon1",{
         scroller:'body',
         start:"top 55%",
         end:"top 45%",
-        scrub:1
+        scrub:2
     }
 })
 gsap.from("#colon2",{
@@ -91,7 +74,7 @@ gsap.from("#colon2",{
         scroller:'body',
         start:"top 55%",
         end:"top 45%",
-        scrub:1
+        scrub:2
     }
 })
 gsap.from("#page4 h1",{
