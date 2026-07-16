@@ -27,6 +27,7 @@ html,body{
 #nav h4{
     text-transform: uppercase;
     font-weight: 500;
+    cursor: pointer;
     
 }
 #cursor{
@@ -182,7 +183,12 @@ body:has(.arrow-con:hover) #cursor{
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
-
+body:has(.marque-h4:hover) #cursor{
+    height: 100px;
+    width: 100px;
+    border: 2px solid white;
+    background: transparent;
+}
 @keyframes scroll {
     from{
         transform: translateX(0);
@@ -339,6 +345,12 @@ object-fit: cover;
     overflow: hidden;
     border-radius: 20px;
     position: relative;
+}
+body:has(.elem:hover) #cursor{
+    height: 100px;
+    width: 100px;
+    background-color: transparent;
+    border: 2px solid white;
 }
 .elem img{
     height: 100%;
