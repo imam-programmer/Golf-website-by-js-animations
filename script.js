@@ -1,5 +1,13 @@
 let crsr=document.querySelector("#cursor")
 let blur=document.querySelector("#cursor-blur")
+
+let navBarContainer=document.querySelector("#nav .nav-list");
+let navBtn=document.querySelector(".nav-btn");
+navBtn.addEventListener("click",()=>{
+navBarContainer.classList.toggle("Nav-list")
+
+
+})
 document.addEventListener("mousemove",(dets)=>{
 crsr.style.transform=`translate(${dets.clientX}px, ${dets.clientY}px) translate(-50%, -50%)`;
 blur.style.transform=`translate(${dets.clientX}px, ${dets.clientY}px) translate(-50%, -50%)`;
