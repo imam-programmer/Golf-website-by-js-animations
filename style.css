@@ -583,4 +583,33 @@ body:has(.elem:hover) #cursor {
 .overlay p {
     font-size: 14px;
 }
+#green-div h4 {
+    font-size: 16px;
+    width: 100%;
+    line-height: 30px;
+}
+#green-div {
+    margin-top: 150px;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to left bottom, #37aa32, #b0e913);
+}
+/* ===========page3 start===================== */
+
+#page3 > p {
+    font-size: 16px;
+    width: 80%;
+}
+#page3 #colon2 {
+    width: 30px;
+    right: 20%;
+    bottom: 27%;
+}
+#page3 #colon1 {
+    left: 2%;
+    top: 25%;
+    width: 30px;
+}
 }
