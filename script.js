@@ -2,7 +2,7 @@ let crsr=document.querySelector("#cursor")
 let blur=document.querySelector("#cursor-blur")
 document.addEventListener("mousemove",(dets)=>{
 crsr.style.transform=`translate(${dets.clientX}px, ${dets.clientY}px) translate(-50%, -50%)`;
-
+blur.style.transform=`translate(${dets.clientX}px, ${dets.clientY}px) translate(-50%, -50%)`;
 })
 
 gsap.to("#nav",{

@@ -15,11 +15,15 @@ html,body{
     width: 100%;
     display: flex;
     align-items: center;
-    padding: 0 150px;
-    gap: 40px;
-    justify-content: flex-start;
+    justify-content: space-between;
     position: fixed;
     z-index: 999;
+    padding: 0 20px;
+
+    .nav-list{
+        display: flex;
+        gap: 50px;
+    }
 }
 #nav img{
     height: 75px;
@@ -58,6 +62,7 @@ body:has(#nav-h4:hover) #cursor{
     position: fixed;
     z-index: 9;
     filter: blur(50px);
+    transition: transform .15s linear, width .3s, background .3s, border .3s;
   
 }
 video{
