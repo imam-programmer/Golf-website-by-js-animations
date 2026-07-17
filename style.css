@@ -232,7 +232,7 @@ body:has(.marque-h4:hover) #cursor {
   line-height: 26px;
 }
 #cards-container {
-  /* background: red; */
+
   height: 60vh;
   display: flex;
   align-items: center;
@@ -244,7 +244,7 @@ body:has(.marque-h4:hover) #cursor {
 .card {
   height: 80%;
   width: 25%;
-  /* background: #000; */
+
   border-radius: 30px;
   background-size: cover;
   background-position: center;
@@ -411,7 +411,7 @@ body:has(.elem:hover) #cursor {
   background: #000;
   padding: 5px 10px;
   font-size: 20px;
-  /* border: none; */
+
   border-radius: 10px;
 }
 /* small device responsive start=================== */
@@ -471,12 +471,11 @@ body:has(.elem:hover) #cursor {
   /* ==================hero start========================= */
   #page1{
       padding: 0 10px;
-    /* padding-top: ; */
+
   }
   #page1 h1 {
     font-size: 30px;
-    /* text-transform: uppercase;
-    position: relative; */
+
 }
 #page1 h1::before {
   top: -4px;
@@ -486,7 +485,7 @@ body:has(.elem:hover) #cursor {
 #page1 h2 {
     font-size: 16px;
     margin-top: 10px;
-    /* text-transform: uppercase; */
+  
 }
 #page1 p {
     font-size: 14px;
@@ -504,5 +503,13 @@ body:has(.elem:hover) #cursor {
     transform: translateX(-50%);
     bottom: -10px;
 
+}
+/* hero end======================== */
+
+/* page2 start==================== */
+#scroller h4 {
+    font-size: 40px;
+    -webkit-text-stroke: 1px #95c11e;
+  
 }
 }
