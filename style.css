@@ -97,6 +97,7 @@ video {
   font-size: 100px;
   text-transform: uppercase;
   position: relative;
+  
 }
 #page1 h1::before {
   content: "eat. drink. play.";
@@ -423,7 +424,6 @@ body:has(.elem:hover) #cursor {
       flex-direction: column;
       position: absolute;
       gap: 20px;
-      background-color: #119f3a;
       height: 100vh;
       padding-top: 15px;
       text-align: center;
@@ -469,4 +469,40 @@ body:has(.elem:hover) #cursor {
   /* ===================navbar done============================= */
 
   /* ==================hero start========================= */
+  #page1{
+      padding: 0 10px;
+    /* padding-top: ; */
+  }
+  #page1 h1 {
+    font-size: 30px;
+    /* text-transform: uppercase;
+    position: relative; */
+}
+#page1 h1::before {
+  top: -4px;
+  left: -4px;
+
+}
+#page1 h2 {
+    font-size: 16px;
+    margin-top: 10px;
+    /* text-transform: uppercase; */
+}
+#page1 p {
+    font-size: 14px;
+    width: 100%;
+    margin-top: 10px;
+}
+#page1 #arrow {
+    height: 100px;
+    width: 100px;
+
+}
+.arrow-con {
+
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+
+}
 }
