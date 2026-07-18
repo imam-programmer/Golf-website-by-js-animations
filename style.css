@@ -618,6 +618,7 @@ body:has(.elem:hover) #cursor {
 
   .elem {
     width: 46%;
+    height: 55%;
   }
   .elem h2 {
     font-size: 16px;
@@ -660,22 +661,19 @@ body:has(#nav-h4:hover) #cursor{
   /* ===================navbar done============================= */
 
   /* ==================hero start========================= */
-  #page1 {
-    padding: 0 10px;
-  }
+
   #page1 h1 {
-    font-size: 30px;
+    font-size: 50px;
   }
   #page1 h1::before {
     top: -4px;
     left: -4px;
   }
   #page1 h2 {
-    font-size: 16px;
-    margin-top: 10px;
+    font-size: 20px;
   }
   #page1 p {
-    font-size: 14px;
+   
     width: 100%;
     margin-top: 10px;
   }
@@ -698,28 +696,34 @@ body:has(#nav-h4:hover) #cursor{
     font-size: 40px;
     -webkit-text-stroke: 1px #95c11e;
   }
-  #about-us {
-    display: none;
-  }
-  #about-uses {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 0;
-    gap: 20px;
-    flex-direction: column;
-    display: block;
-  }
 
-  #cards-container {
-    display: none;
-  }
-  .card {
-    height: 100%;
-    width: 100%;
+  #about-us-in h3 {
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+#about-us-in p {
+    font-size: 12px;
+    line-height: 18px;
+}
+#about-us {
+    padding: 0 5px;
+gap: 5px;
+}
+#about-us img {
+    height: 169px;
+    width: 150px;
+}
+
+.card {
+    height: 68%;
+    width: 30%;
     overflow: visible;
-  }
+}
+#cards-container {
+    gap: 10px;
+}
   .overlay {
     padding: 0px 10px;
     padding-top: 50px;
@@ -727,11 +731,11 @@ body:has(#nav-h4:hover) #cursor{
     border-radius: 30px;
   }
   .overlay h4 {
-    font-size: 20px;
+    font-size: 16px;
     margin-bottom: 10px;
   }
   .overlay p {
-    font-size: 14px;
+    font-size: 12px;
   }
   #green-div h4 {
     font-size: 16px;
@@ -749,7 +753,7 @@ body:has(#nav-h4:hover) #cursor{
   /* ===========page3 start===================== */
 
   #page3 > p {
-    font-size: 16px;
+    font-size: 20px;
     width: 80%;
   }
   #page3 #colon2 {
@@ -777,9 +781,154 @@ body:has(#nav-h4:hover) #cursor{
     text-align: center;
   }
   #page4 h1 {
-    font-size: 16px;
+    font-size: 20px;
     top: -14px;
     -webkit-text-stroke: 0.2px white;
+  }
+  #footer {
+    margin-top: 100px;
+  }
+}
+
+
+
+
+/* =============real medium device responsive start============== */
+@media (min-width: 801px) and (max-width: 1000px) {
+  #nav {
+    #nav-h4 {
+      font-size: 14px;
+      white-space: nowrap;
+    }
+  }
+body:has(#nav-h4:hover) #cursor{
+  height: 50px;
+  width: 50px;
+}
+
+  img {
+    width: 90px;
+  }
+
+  .nav-list {
+    gap: 15px !important;
+  }
+  /* ===================navbar done============================= */
+
+  /* ==================hero start========================= */
+
+  #page1 h1 {
+    font-size: 60px;
+  }
+
+  #page1 p { 
+    width: 100%;
+    margin-top: 20px;
+  }
+  #page1 #arrow {
+    height: 100px;
+    width: 100px;
+  }
+  .arrow-con {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+  }
+  /* hero end======================== */
+
+  /* page2 start==================== */
+  #page2 {
+    padding: 0 10px;
+  }
+  #scroller h4 {
+    font-size: 50px;
+    -webkit-text-stroke: 2px #95c11e;
+  }
+
+  #about-us-in h3 {
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+#about-us-in p {
+    font-size: 12px;
+    line-height: 18px;
+}
+#about-us {
+    padding: 0 5px;
+gap: 5px;
+}
+#about-us img {
+    height: 169px;
+    width: 150px;
+}
+
+.card {
+    height: 68% !important;
+    width: 30%;
+    overflow: visible;
+}
+#cards-container {
+    gap: 10px;
+}
+  .overlay {
+    padding: 0px 10px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    border-radius: 30px;
+  }
+  .overlay h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .overlay p {
+    font-size: 12px;
+  }
+  #green-div h4 {
+    width: 100%;
+    line-height: 30px;
+  }
+  #green-div {
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to left bottom, #37aa32, #b0e913);
+  }
+  /* ===========page3 start===================== */
+
+  #page3 > p {
+    font-size: 25px;
+    width: 80%;
+  }
+  #page3 #colon2 {
+    width: 30px;
+    right: 20%;
+    bottom: 27%;
+  }
+  #page3 #colon1 {
+    left: 2%;
+    top: 25%;
+    width: 30px;
+  }
+
+  #page4 {
+    gap: 20px;
+    padding: 0 5px;
+  }
+
+  .elem {
+    width: 46%;
+  }
+  .elem h2 {
+    font-size: 16px;
+    text-align: center;
+  }
+  #page4 h1 {
+    font-size: 45px;
+    top: -14px;
+    -webkit-text-stroke:1px white;
   }
   #footer {
     margin-top: 100px;
