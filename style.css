@@ -181,6 +181,7 @@ body:has(.arrow-con:hover) #cursor {
 #scroller::-webkit-scrollbar {
   display: none;
 }
+
 #scroller-in {
   display: inline-block;
   white-space: nowrap;
@@ -586,7 +587,6 @@ body:has(.elem:hover) #cursor {
     line-height: 30px;
   }
   #green-div {
-    margin-top: 150px;
     height: 30vh;
     display: flex;
     align-items: center;
@@ -644,10 +644,10 @@ body:has(.elem:hover) #cursor {
       white-space: nowrap;
     }
   }
-body:has(#nav-h4:hover) #cursor{
-  height: 50px;
-  width: 50px;
-}
+  body:has(#nav-h4:hover) #cursor {
+    height: 50px;
+    width: 50px;
+  }
 
   img {
     width: 70px;
@@ -673,7 +673,6 @@ body:has(#nav-h4:hover) #cursor{
     font-size: 20px;
   }
   #page1 p {
-   
     width: 100%;
     margin-top: 10px;
   }
@@ -701,29 +700,29 @@ body:has(#nav-h4:hover) #cursor{
     font-size: 25px;
     text-transform: uppercase;
     margin-bottom: 20px;
-}
+  }
 
-#about-us-in p {
+  #about-us-in p {
     font-size: 12px;
     line-height: 18px;
-}
-#about-us {
+  }
+  #about-us {
     padding: 0 5px;
-gap: 5px;
-}
-#about-us img {
+    gap: 5px;
+  }
+  #about-us img {
     height: 169px;
     width: 150px;
-}
+  }
 
-.card {
+  .card {
     height: 68%;
     width: 30%;
     overflow: visible;
-}
-#cards-container {
+  }
+  #cards-container {
     gap: 10px;
-}
+  }
   .overlay {
     padding: 0px 10px;
     padding-top: 50px;
@@ -743,7 +742,6 @@ gap: 5px;
     line-height: 30px;
   }
   #green-div {
-    margin-top: 150px;
     height: 30vh;
     display: flex;
     align-items: center;
@@ -790,9 +788,6 @@ gap: 5px;
   }
 }
 
-
-
-
 /* =============real medium device responsive start============== */
 @media (min-width: 801px) and (max-width: 1000px) {
   #nav {
@@ -801,10 +796,10 @@ gap: 5px;
       white-space: nowrap;
     }
   }
-body:has(#nav-h4:hover) #cursor{
-  height: 50px;
-  width: 50px;
-}
+  body:has(#nav-h4:hover) #cursor {
+    height: 50px;
+    width: 50px;
+  }
 
   img {
     width: 90px;
@@ -821,7 +816,7 @@ body:has(#nav-h4:hover) #cursor{
     font-size: 60px;
   }
 
-  #page1 p { 
+  #page1 p {
     width: 100%;
     margin-top: 20px;
   }
@@ -849,29 +844,29 @@ body:has(#nav-h4:hover) #cursor{
     font-size: 25px;
     text-transform: uppercase;
     margin-bottom: 20px;
-}
+  }
 
-#about-us-in p {
+  #about-us-in p {
     font-size: 12px;
     line-height: 18px;
-}
-#about-us {
+  }
+  #about-us {
     padding: 0 5px;
-gap: 5px;
-}
-#about-us img {
+    gap: 5px;
+  }
+  #about-us img {
     height: 169px;
     width: 150px;
-}
+  }
 
-.card {
+  .card {
     height: 68% !important;
     width: 30%;
     overflow: visible;
-}
-#cards-container {
+  }
+  #cards-container {
     gap: 10px;
-}
+  }
   .overlay {
     padding: 0px 10px;
     padding-top: 50px;
@@ -928,7 +923,7 @@ gap: 5px;
   #page4 h1 {
     font-size: 45px;
     top: -14px;
-    -webkit-text-stroke:1px white;
+    -webkit-text-stroke: 1px white;
   }
   #footer {
     margin-top: 100px;
@@ -936,27 +931,28 @@ gap: 5px;
 }
 
 /* ============large device responsive start================== */
-@media (min-width:1001px) and (max-width:1200px){
+@media (min-width: 1001px) and (max-width: 1200px) {
   .overlay h4 {
-
-	font-size: 21px;
-
-}
-.overlay {
-	padding-top: 60px;
-
-}
-#page3 > p {
-	font-size: 28px;
-
-}
-#page4 h1 {
+    font-size: 21px;
+  }
+  .overlay {
+    padding-top: 60px;
+  }
+  #page3 > p {
+    font-size: 28px;
+  }
+  #page4 h1 {
     font-size: 59px;
 
     text-align: center;
+  }
+  .elem h2 {
+    font-size: 25px;
+  }
 }
-.elem h2 {
-	font-size: 25px;
 
-}
+@media (min-width: 1201px) and (max-width: 1400px) {
+  .overlay h4 {
+    font-size: 26px;
+  }
 }
