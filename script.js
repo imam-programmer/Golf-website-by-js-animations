@@ -96,3 +96,19 @@ gsap.from("#page4 h1",{
         scrub:2
     }
 })
+
+
+
+// const aboutContainer=document.getElementById('about-us-ining');
+gsap.from(".uses-elem",{
+    scale:0,
+    transformOrigin:"top",
+    // duration:2,
+    stagger:1,
+    scrollTrigger:{
+        trigger:"#about-uses",
+        scroller:"body",
+        start:"top 75%",
+        end:"top 100%",
+    }
+})

@@ -97,7 +97,6 @@ video {
   font-size: 100px;
   text-transform: uppercase;
   position: relative;
-  
 }
 #page1 h1::before {
   content: "eat. drink. play.";
@@ -205,7 +204,6 @@ body:has(.marque-h4:hover) #cursor {
   }
 }
 #about-us {
-    display: none !important;
   height: 40vh;
   display: flex;
   align-items: center;
@@ -240,6 +238,7 @@ body:has(.marque-h4:hover) #cursor {
   align-items: center;
   justify-content: space-around;
   padding: 0 50px;
+  display: none;
   position: relative;
 }
 #about-uses img {
@@ -247,6 +246,7 @@ body:has(.marque-h4:hover) #cursor {
   width: 100%;
   border-radius: 20px;
   object-fit: cover;
+  margin-bottom: 10px;
 }
 #about-us-ining {
   width: 100%;
@@ -254,18 +254,17 @@ body:has(.marque-h4:hover) #cursor {
 }
 #about-us-ining h3 {
   text-transform: uppercase;
-   font-size: 25px;
-    margin-bottom: 10px;
+  font-size: 25px;
+  margin-bottom: 10px;
 }
 #about-us-ining p {
   font-size: 14px;
   line-height: 20px;
+  margin-bottom: 20px;
 }
 /* ================================================================================================================= */
 
-
 #cards-container {
-
   height: 60vh;
   display: flex;
   align-items: center;
@@ -347,6 +346,7 @@ body:has(.marque-h4:hover) #cursor {
   align-items: center;
   justify-content: center;
   position: relative;
+  overflow-x: hidden;
 }
 #page3 > p {
   font-size: 30px;
@@ -429,10 +429,16 @@ body:has(.elem:hover) #cursor {
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  gap: 150px;
+  justify-content: center;
+  gap: 50px;
   padding: 0 100px;
 }
+
+#footer-icon {
+  font-size: 30px;
+  display: block;
+}
+
 #nav-h4:hover #cursor {
   height: 30px;
   width: 30px;
@@ -501,115 +507,281 @@ body:has(.elem:hover) #cursor {
   /* ===================navbar done============================= */
 
   /* ==================hero start========================= */
-  #page1{
-      padding: 0 10px;
-
+  #page1 {
+    padding: 0 10px;
   }
   #page1 h1 {
     font-size: 30px;
-
-}
-#page1 h1::before {
-  top: -4px;
-  left: -4px;
-
-}
-#page1 h2 {
+  }
+  #page1 h1::before {
+    top: -4px;
+    left: -4px;
+  }
+  #page1 h2 {
     font-size: 16px;
     margin-top: 10px;
-  
-}
-#page1 p {
+  }
+  #page1 p {
     font-size: 14px;
     width: 100%;
     margin-top: 10px;
-}
-#page1 #arrow {
+  }
+  #page1 #arrow {
     height: 100px;
     width: 100px;
-
-}
-.arrow-con {
-
+  }
+  .arrow-con {
     left: 50%;
     transform: translateX(-50%);
     bottom: -10px;
-
-}
-/* hero end======================== */
-
-/* page2 start==================== */
-  #page2{
-      padding: 0 10px;
-
   }
-#scroller h4 {
+  /* hero end======================== */
+
+  /* page2 start==================== */
+  #page2 {
+    padding: 0 10px;
+  }
+  #scroller h4 {
     font-size: 40px;
     -webkit-text-stroke: 1px #95c11e;
-  
-}
-#about-uses {
+  }
+  #about-us {
+    display: none;
+  }
+  #about-uses {
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
     padding: 0;
-    gap: 10px;
+    gap: 20px;
     flex-direction: column;
-}
+    display: block;
+  }
 
-#cards-container {
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 200px;
-}
-.card {
+  #cards-container {
+    display: none;
+  }
+  .card {
     height: 100%;
     width: 100%;
     overflow: visible;
-
-}
-.overlay {
+  }
+  .overlay {
     padding: 0px 10px;
     padding-top: 50px;
     padding-bottom: 20px;
-     border-radius: 30px;
-
-}
-.overlay h4 {
+    border-radius: 30px;
+  }
+  .overlay h4 {
     font-size: 20px;
     margin-bottom: 10px;
-}
-.overlay p {
+  }
+  .overlay p {
     font-size: 14px;
-}
-#green-div h4 {
+  }
+  #green-div h4 {
     font-size: 16px;
     width: 100%;
     line-height: 30px;
-}
-#green-div {
+  }
+  #green-div {
     margin-top: 150px;
     height: 30vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background: linear-gradient(to left bottom, #37aa32, #b0e913);
-}
-/* ===========page3 start===================== */
+  }
+  /* ===========page3 start===================== */
 
-#page3 > p {
+  #page3 > p {
     font-size: 16px;
     width: 80%;
-}
-#page3 #colon2 {
+  }
+  #page3 #colon2 {
     width: 30px;
     right: 20%;
     bottom: 27%;
-}
-#page3 #colon1 {
+  }
+  #page3 #colon1 {
     left: 2%;
     top: 25%;
     width: 30px;
+  }
+
+  #page4 {
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 0 5px;
+  }
+
+  .elem {
+    width: 46%;
+  }
+  .elem h2 {
+    font-size: 16px;
+    text-align: center;
+  }
+  #page4 h1 {
+    font-size: 16px;
+    top: -14px;
+    -webkit-text-stroke: 0.2px white;
+  }
+  #footer {
+    margin-top: 100px;
+  }
 }
+
+/* =========medium device start========== */
+@media (min-width: 576px) and (max-width: 800px) {
+  #nav {
+    padding: 0 10px;
+
+    #nav-h4 {
+      font-size: 12px;
+      white-space: nowrap;
+    }
+  }
+body:has(#nav-h4:hover) #cursor{
+  height: 50px;
+  width: 50px;
+}
+
+  img {
+    width: 70px;
+  }
+  #nav {
+    height: 80px !important;
+  }
+  .nav-list {
+    gap: 13px !important;
+  }
+  /* ===================navbar done============================= */
+
+  /* ==================hero start========================= */
+  #page1 {
+    padding: 0 10px;
+  }
+  #page1 h1 {
+    font-size: 30px;
+  }
+  #page1 h1::before {
+    top: -4px;
+    left: -4px;
+  }
+  #page1 h2 {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  #page1 p {
+    font-size: 14px;
+    width: 100%;
+    margin-top: 10px;
+  }
+  #page1 #arrow {
+    height: 100px;
+    width: 100px;
+  }
+  .arrow-con {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+  }
+  /* hero end======================== */
+
+  /* page2 start==================== */
+  #page2 {
+    padding: 0 10px;
+  }
+  #scroller h4 {
+    font-size: 40px;
+    -webkit-text-stroke: 1px #95c11e;
+  }
+  #about-us {
+    display: none;
+  }
+  #about-uses {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0;
+    gap: 20px;
+    flex-direction: column;
+    display: block;
+  }
+
+  #cards-container {
+    display: none;
+  }
+  .card {
+    height: 100%;
+    width: 100%;
+    overflow: visible;
+  }
+  .overlay {
+    padding: 0px 10px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    border-radius: 30px;
+  }
+  .overlay h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .overlay p {
+    font-size: 14px;
+  }
+  #green-div h4 {
+    font-size: 16px;
+    width: 100%;
+    line-height: 30px;
+  }
+  #green-div {
+    margin-top: 150px;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to left bottom, #37aa32, #b0e913);
+  }
+  /* ===========page3 start===================== */
+
+  #page3 > p {
+    font-size: 16px;
+    width: 80%;
+  }
+  #page3 #colon2 {
+    width: 30px;
+    right: 20%;
+    bottom: 27%;
+  }
+  #page3 #colon1 {
+    left: 2%;
+    top: 25%;
+    width: 30px;
+  }
+
+  #page4 {
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 0 5px;
+  }
+
+  .elem {
+    width: 46%;
+  }
+  .elem h2 {
+    font-size: 16px;
+    text-align: center;
+  }
+  #page4 h1 {
+    font-size: 16px;
+    top: -14px;
+    -webkit-text-stroke: 0.2px white;
+  }
+  #footer {
+    margin-top: 100px;
+  }
 }
